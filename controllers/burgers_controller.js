@@ -12,8 +12,6 @@ var router = express.Router();
 // Create routes
 router.get("/", function(req, res) {
 
-    // res.render("index");
-
     burger.all(function(data) {
         var hbsObject = {
             burgers: data
@@ -41,12 +39,12 @@ router.post("/api/burger", function(req, res) {
 router.put("/api/burger/:id", function(req, res) {
 
     console.log(req.body);
-    var condition = "id = " + req.params.id;
+    var condition = "item_id = " + req.params.id;
 
     console.log("condition", condition);
 
     burger.update({
-            burger: req.body.devoured
+            devoured: req.body.devoured
         },
         condition,
         function(result) {

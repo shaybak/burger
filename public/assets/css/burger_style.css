@@ -31,7 +31,20 @@ p {
     text-align: center;
 }
 
+.burger-time-header {
+    text-align: center;
+}
+
 .burger-img {
     border-radius: 100%;
     width: 200px;
+}
+
+.change {
+    margin: 3px;
+}
+
+.col-6 {
+    border: solid 1px blue;
+    border-radius: 20%;
 }
