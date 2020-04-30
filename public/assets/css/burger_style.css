@@ -18,6 +18,12 @@ p {
     line-height: 1.5;
 }
 
+li {
+    font-family: 'Montserrat', sans-serif;
+    margin: 3px;
+    list-style: none;
+}
+
 .numbery {
     font-family: 'Rock Salt', cursive;
 }
