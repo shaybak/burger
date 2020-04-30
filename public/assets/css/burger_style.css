@@ -4,6 +4,7 @@ body {
 
 h1 {
     font-family: 'Rock Salt', cursive;
+    line-height: 1.2;
     padding: 2%;
 }
 
@@ -14,6 +15,7 @@ h5,
 h6,
 p {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
 
 .numbery {
