@@ -1,39 +1,66 @@
     
-    <img src="../public/assets/img/burger-img.png" alt="burger" class="burger-img">
-    <h1>Burgers!</h1>
-    <h2>Devour or don't. Or do and then don't again. The possibilities are endlessly one or the other!</h2>
+    
+    <div class="container">
+
+            <div class="jumbotron header-tron">
+
+                <img src="../assets/img/burger-img.png" alt="burger" class="burger-img">
+                <h1>Burgers!</h1>
+                <h5>Devour or don't. <br>
+                Or do and then don't again. <br>
+                The possibilities are endlessly <span class="numbery">one</span> or the <span class="numbery">other</span>!</h5>
 
 
+            </div>
 
-<h2>Burgers that have not yet been devoured:</h2>
+      <h4>Burgers that have not yet been devoured:</h4>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+      <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+          {{/if}}
+        {{/each}}
+      </ul>
 
 
-    <h3>Burgers that have been devoured:</h3>
+          <h4>Burgers that have been devoured:</h4>
 
-    <ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burgers-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+          <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burgers-block devoured=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
 
-<h2>What burger would you like to eat?</h2>
-<form class="create-form">
+<br>
+<br>
 
-  <div class="form-group">
-    <label for="ca">Burger name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
+
+<div class="container add-burger-div">
+
+      <h1>What burger would you like to eat?</h1>
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="ca">Burger name:</label>
+          <input type="text" id="ca" name="name">
+        </div>
 
   <button type="submit">Submit</button>
+
+
+</div>
+
+
+
+    </div>
+   
+
+
+
+
+
 </form>
     

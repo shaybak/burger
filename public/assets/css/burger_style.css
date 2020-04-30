@@ -1,7 +1,35 @@
 body {
-    background: goldenrod;
+    background: palegoldenrod;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    padding: 2%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.numbery {
+    font-family: 'Rock Salt', cursive;
+}
+
+.header-tron {
+    background: palegoldenrod;
+    text-align: center;
+}
+
+.add-burger-div {
+    text-align: center;
 }
 
 .burger-img {
     border-radius: 100%;
+    width: 200px;
 }
