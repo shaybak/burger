@@ -49,3 +49,7 @@ li {
 .change {
     margin: 3px;
 }
+
+#burger-arrow-img {
+    width: 90%;
+}
