@@ -29,11 +29,6 @@ router.post("/api/burger", function(req, res) {
         res.json({ id: result.insertId });
     });
 
-
-    // EXAMPLE WITHOUT DEFINING BOOLEAN COLUMN VALUE
-    // burger.create(["burger_name"], [req.body.burger_name], function(result) {
-    //     res.json({ id: result.insertId });
-    // })
 });
 
 router.put("/api/burger/:id", function(req, res) {
@@ -57,11 +52,6 @@ router.put("/api/burger/:id", function(req, res) {
         }
     );
 });
-
-
-
-
-
 
 
 // Export routes for server.js
